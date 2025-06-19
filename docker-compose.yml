@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  cricket:
+    build: .
+    container_name: cricket_predictor
+    ports:
+      - "80:8501"
+    volumes:
+      - .:/app
+    restart: always
